@@ -1,16 +1,14 @@
+import functions from './syntax'
 
-test ('ADD 2 nums', () => {
-       expect(functions.addNum(5,6)).toBe(11);
-        });
+let array10 =[1,2,3,4,5,6,7,8,9] 
 
-        /*
-test('Does that add function work?', () => {
-    expect(functions.add(1,2)).toBe(3);
-    expect(functions.add(101,202)).toBe(303);
+test('Check the sizes', () => {
+    expect(functions.size(-1)).toBe("small");
+    expect(functions.add(1,1)).toBe(2); 
+    expect(functions.makePizza("mushroom","pepperoni")).
+    toBe("mushroom pepperoni"); 
+    expect(functions.isEven(4)).toBe(true);
+    expect(functions.IsLargerThan9(4)).toBe(false);
+    expect(functions.pick7(array10)).toBe(7);
+
 });
-
-test('Does that add function work?', () => {
-    expect(functions.isEven(2)).toBe(true);
-});
-*/
-
