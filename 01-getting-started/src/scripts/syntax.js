@@ -37,33 +37,42 @@ const functions = {
     // let array10 = [0,1,2,3,4,5,6,7,8,9]
     checksArray:(array10) => {
         return array10[2];
-
     },
 
+    isObject (value) {
+        return value && typeof value === 'object'
+         && value.constructor === Object;        
+    },
 
+    isUndefined:(array10) => {
+        return array10[2]
+    },
+
+    ifBeer: (time) => { 
+    if (time < 17) {
+    return "Coffee time";
+  } else {
+    return "Beer time";
+  }
+
+}
 
 };
 
-// var fruits = ["Banana", "Orange", "Apple", "Mango"];
-// fruits.length;   // the length of fruits is 4
 
 
 export default functions;
 
 
-/* string */
-    /*
-    var pizza = "mushroom"; 
-    
-    /* boolean */
 
-    //  var B = Boolean(10 > 9)  
 
-    /* array  */
+
+
 
     // var pizza = ["pepperoni", "ham", "veggie"];
     
     /*  dictionary / objects
+
     undefined
 sample if / else
 functions
