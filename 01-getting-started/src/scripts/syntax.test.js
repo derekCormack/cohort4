@@ -9,6 +9,6 @@ test('Check the sizes', () => {
     toBe("mushroom pepperoni"); 
     expect(functions.isEven(4)).toBe(true);
     expect(functions.IsLargerThan9(4)).toBe(false);
-    expect(functions.pick7(array10)).toBe(7);
+    expect(functions.checksArray(x)).toBe(7);
 
 });

@@ -23,7 +23,7 @@ const functions = {
         let pizza = toppingOne + " " + toppingTwo
     return pizza;
 
-},
+    },
 
 
     add: (num1, num2) => {
@@ -34,10 +34,19 @@ const functions = {
         return num>9;
     },
 
+    let array10 = [0,1,2,3,4,5,6,7,8,9]
+    checksArray:(array10) => {
+        return x = numArray(8);
+
+    },
 
 
 
 };
+
+// var fruits = ["Banana", "Orange", "Apple", "Mango"];
+// fruits.length;   // the length of fruits is 4
+
 
 export default functions;
 
