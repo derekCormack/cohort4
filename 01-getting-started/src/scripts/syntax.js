@@ -1,3 +1,6 @@
+let beers = ["wildRose", "kokanee", "richardsRed", "blacksmith"];
+let array10 = [0,1,2,3,4,5,6,7,8,9];
+
 const functions = {
     
     size: (num) => {
@@ -34,7 +37,7 @@ const functions = {
         return num>9;
     },
 
-    // let array10 = [0,1,2,3,4,5,6,7,8,9]
+    
     checksArray:(array10) => {
         return array10[2];
     },
@@ -53,9 +56,23 @@ const functions = {
     return "Coffee time";
   } else {
     return "Beer time";
-  }
+  }},
 
-}
+    addBack:(beers) => {  
+              beers.push("coors");
+        return beers
+    },
+
+    beerSplice:(beers,pop) => {  
+        beers.splice(0,1,pop);
+  return beers
+    },
+
+    // loops:(beers,pop) => {  
+        // beers.splice(0,1,pop);
+//   return beers
+    }
+
 
 };
 

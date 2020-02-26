@@ -12,5 +12,9 @@ test('Check the sizes', () => {
     expect(functions.isObject(8,"mouse",0,true)).toEqual(false);
     expect(functions.isUndefined([])).toBe(undefined);
     expect(functions.ifBeer(8)).toBe("Coffee time");
+    expect(functions.addBack(["wildRose", "kokanee", "richardsRed", "blacksmith"]))
+    .toEqual(["wildRose", "kokanee", "richardsRed", "blacksmith","coors"])
+    expect(functions.beerSplice(["wildRose", "kokanee", "richardsRed", "blacksmith"], "pop")).toEqual(["pop", "kokanee", "richardsRed", "blacksmith"]);
+       
        
 });
