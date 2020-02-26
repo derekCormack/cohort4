@@ -34,9 +34,9 @@ const functions = {
         return num>9;
     },
 
-    let array10 = [0,1,2,3,4,5,6,7,8,9]
+    // let array10 = [0,1,2,3,4,5,6,7,8,9]
     checksArray:(array10) => {
-        return x = numArray(8);
+        return array10[2];
 
     },
 
