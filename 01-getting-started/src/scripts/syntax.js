@@ -71,7 +71,7 @@ const functions = {
     // loops:(beers,pop) => {  
         // beers.splice(0,1,pop);
 //   return beers
-    }
+    // }
 
 
 };
