@@ -1,6 +1,6 @@
 import functions from './functions'
 
- test('Check the calcs', () => {
+ test('this is where we Check the calcs', () => {
      expect(functions.addNums(5,5)).toEqual(10);
      });
 
