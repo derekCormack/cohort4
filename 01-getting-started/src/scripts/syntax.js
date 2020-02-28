@@ -54,9 +54,9 @@ const functions = {
     ifBeer: (time) => { 
     if (time < 17) {
     return "Coffee time";
-  } else {
+    } else {
     return "Beer time";
-  }},
+    }},
 
     addBack:(beers) => {  
               beers.push("coors");
@@ -68,10 +68,10 @@ const functions = {
   return beers
     },
 
-    // loops:(beers,pop) => {  
-        // beers.splice(0,1,pop);
-//   return beers
-    // }
+    loops:(beers,pop) => {  
+        beers.splice(0,1,pop);
+  return beers
+    }
 
 
 };
