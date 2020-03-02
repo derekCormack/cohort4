@@ -14,7 +14,8 @@ const functions = {
     },
 
     add: (num1, num2) => {
-        return calcTotal = num1 + num2;
+        calcTotal = num1 + num2;
+        document.getElementById("result").innerHTML = "Paragraph changed!";
     },
 
     subtract: (num1, num2) => {

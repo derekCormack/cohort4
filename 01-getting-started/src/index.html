@@ -101,14 +101,35 @@
 
     <div class="bgimg-2 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
-            <span class="w3-xxlarge w3-text-white w3-wide">SIZE</span>
+            <span class="w3-xxlarge w3-text-white w3-wide">SIMPLE CALCULATOR</span>
         </div>
     </div>
 
     <div class="w3-content w3-container w3-padding-64 w3-center" id="idSize">
-        Did you know that =>
-        <input id="idNumber" type="number"> is a <span id="idNumberSize">unknown</span> number?
-        <p id="idNumberSizexx"></p>
+                 <!-- Added calculator from calc.html file (cleanup) -->
+                 <h1> Simple Calculator </h1>
+            
+                <label for=num1>First Number:</label><br>
+                <input type="number" id="num1" name="num1"><br>
+                <label for=num2>Second Number:</label><br>
+                <input type="number" id="num2" name="num2"><br><br>
+                 <!-- add event listner -->
+                 document.getElementById("myBtn").addEventListener("click", functions.add(){
+                    document.getElementById("demo").innerHTML = "Hello World";
+                  });
+
+
+
+                <button onclick="(function(){functions.add(num1, num2)})()">Add</button><br>
+                <input type="button" value="Subtract" onclick=subtractNums()><br>
+                <input type="button" value="Multiply" onclick=multipyNums()><br>
+                <input type="button" value="Divide" onclick=divideNums()><br>
+                             
+            <h2> Calculated Total <h2>
+                    <p1 id="result"></p1> 
+                    
+                        
+ 
     </div>
 
 
