@@ -6,19 +6,24 @@
     <title>Document</title>
 </head>
 <body>
-    <h1> simple calculator </h1>
+    <h1> Simple Calculator </h1>
     
         <label for=num1>First Number:</label><br>
-        <input type="text" id="numOne" name="numOne"><br>
+        <input type="number" id="num1" name="num1"><br>
         <label for=num2>Second Number:</label><br>
-        <input type="text" id="numTwo" name="numTwo"><br>
-        <input type="button" value="Add---------" onclick=functions.addNums><br>
-        <!-- <input type="button" value="Subtract---" onclick=functions.subtractNums><br>
-        <input type="button" value="Multiply----" onclick=functions.multipyNums><br>
-        <input type="button" value="Divide------" onclick=functions.divideNums><br> -->
-        
-            <script>document.getElementById("result").innerHTML=functions.calcTotal;</script>
-        <h1 id=result> <h1>
+        <input type="text" id="num2" name="num2"><br>
+        <input type="button" value="Add---------" onclick=addNums()><br>
+        <input type="button" value="Subtract----" onclick=subtractNums()><br>
+        <input type="button" value="Multiply----" onclick=multipyNums()><br>
+        <input type="button" value="Divide------" onclick=divideNums()><br>
+                     
+    <h2> Calculated Total <h2>
+            <p1 id=result >result</p1> 
+
+
                      <script>src="functions.js"</script>
 </body>
 </html>
+
+
+
