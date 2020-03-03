@@ -96,8 +96,11 @@
         <p id="idNumberSizexx"></p>
     </div>
 
+    functions from './functions'
 
     <!-- ---------- calculator ------------------ -->
+
+<script src="./functions.js" type="module"></script>;
 
     <div class="bgimg-2 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
@@ -114,20 +117,31 @@
                 <label for=num2>Second Number:</label><br>
                 <input type="number" id="num2" name="num2"><br><br>
                  <!-- add event listner -->
-                 document.getElementById("myBtn").addEventListener("click", functions.add(){
-                    document.getElementById("demo").innerHTML = "Hello World";
-                  });
+                       
 
-
-
-                <button onclick="(function(){functions.add(num1, num2)})()">Add</button><br>
-                <input type="button" value="Subtract" onclick=subtractNums()><br>
-                <input type="button" value="Multiply" onclick=multipyNums()><br>
+                <button onclick="document.getElementById(`result`).innerHTML = 
+                functions.add(document.getElementById(`num1`).value, 
+                document.getElementById(`num2`).value)">add</button><br>        
+               
+                <!-- <button onclick="document.getElementById(`result`).innerHTML = 
+                add(document.getElementById(`num1`).value, 
+                document.getElementById(`num2`).value)">subtract</button><br>
+                
+                <button onclick="document.getElementById(`result`).innerHTML = 
+                add(document.getElementById(`num1`).value, 
+                document.getElementById(`num2`).value)">divide</button><br>
+                
+                <button onclick="document.getElementById(`result`).innerHTML = 
+                add(document.getElementById(`num1`).value, 
+                document.getElementById(`num2`).value)">multiply</button><br> -->
+                
+                <!-- <input type="button" value="Multiply" onclick=multipyNums()><br>
                 <input type="button" value="Divide" onclick=divideNums()><br>
-                             
-            <h2> Calculated Total <h2>
-                    <p1 id="result"></p1> 
-                    
+                              -->
+            <h2> Calculated Total </h2>
+                    <p1 id="result">result</p1> 
+                    <!-- <input type="text" id="demo"> -->
+                       
                         
  
     </div>
