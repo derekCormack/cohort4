@@ -100,7 +100,7 @@
 
     <!-- ---------- calculator ------------------ -->
 
-<script src="./functions.js" type="module"></script>;
+<!-- <script src="./functions.js" type="module"></script>; -->
 
     <div class="bgimg-2 w3-display-container w3-opacity-min">
         <div class="w3-display-middle">
@@ -111,38 +111,21 @@
     <div class="w3-content w3-container w3-padding-64 w3-center" id="idSize">
                  <!-- Added calculator from calc.html file (cleanup) -->
                  <h1> Simple Calculator </h1>
-            
-                <label for=num1>First Number:</label><br>
-                <input type="number" id="idNum1" name="num1"><br>
-                <label for=num2>Second Number:</label><br>
-                <input type="number" id="idNum2" name="num2"><br><br>
-                 <!-- add event listner -->
-                       
-                <button id="idAdd">add</button><br>        
-               
-                <!-- <button onclick="document.getElementById(`result`).innerHTML = 
-                add(document.getElementById(`num1`).value, 
-                document.getElementById(`num2`).value)">subtract</button><br>
-                
-                <button onclick="document.getElementById(`result`).innerHTML = 
-                add(document.getElementById(`num1`).value, 
-                document.getElementById(`num2`).value)">divide</button><br>
-                
-                <button onclick="document.getElementById(`result`).innerHTML = 
-                add(document.getElementById(`num1`).value, 
-                document.getElementById(`num2`).value)">multiply</button><br> -->
-                
-                <!-- <input type="button" value="Multiply" onclick=multipyNums()><br>
-                <input type="button" value="Divide" onclick=divideNums()><br>
-                              -->
-            <h2> Calculated Total </h2>
-                    <p1 id="result">result</p1> 
-                    <!-- <input type="text" id="demo"> -->
-                       
-                        
+    
+                 <label for=num1>First Number:</label><br>
+                 <input type="number" id="idNum1" name="idNnum1"><br>
+                 <label for=num2>Second Number:</label><br>
+                 <input type="number" id="idNum2" name="idNum2"><br>
+                 <input type="button" value="Add---------" id="addNums"><br>
+                 <input type="button" value="Subtract----" id="subtractNums"><br>
+                 <input type="button" value="Multiply----" id="multiplyNums"><br>
+                 <input type="button" value="Divide------" id="divideNums"><br> 
+         
+             <h2> Calculated Total<h2>
+                     <p1 id="result" ></p1> 
+                                                                   
  
     </div>
-
 
     <!-- Footer -->
     <footer class="w3-center w3-black w3-padding-64 w3-opacity w3-hover-opacity-off">

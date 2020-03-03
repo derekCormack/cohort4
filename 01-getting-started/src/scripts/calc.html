@@ -9,21 +9,17 @@
     <h1> Simple Calculator </h1>
     
         <label for=num1>First Number:</label><br>
-        <input type="number" id="num1" name="num1"><br>
+        <input type="number" id="idNum1" name="idNnum1"><br>
         <label for=num2>Second Number:</label><br>
-        <input type="text" id="num2" name="num2"><br>
-        <input type="button" value="Add---------" onclick=addNums()><br>
-        <input type="button" value="Subtract----" onclick=subtractNums()><br>
-        <input type="button" value="Multiply----" onclick=multipyNums()><br>
-        <input type="button" value="Divide------" onclick=divideNums()><br>
-                     
+        <input type="text" id="idNum2" name="idNum2"><br>
+        <input type="button" value="Add---------" onclick=functions.add()><br>
+        <input type="button" value="Subtract----" onclick=functions.subtract()><br>
+        <input type="button" value="Multiply----" onclick=functions.multipy()><br>
+        <input type="button" value="Divide------" onclick=divide()><br> 
+
     <h2> Calculated Total <h2>
-            <p1 id=result >result</p1> 
-
-
-                     <script>src="functions.js"</script>
+            <p1 id=result >result, calcTotal</p1> 
+                     <script>src="main.js"</script>
+                     <!-- <script src="./functions.js" type="module"></script>; -->
 </body>
 </html>
-
-
-

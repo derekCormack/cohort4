@@ -10,7 +10,6 @@ test("subtract", () => {
     expect(functions.subtract(3,2)).toEqual(1);
     expect(functions.subtract(10,7)).toEqual(3);
     expect(functions.subtract("5","3")).toEqual(2);
-
 });
 
 test("divide", () => {
