@@ -2,15 +2,9 @@ import functions from './functions'
 
 // tests for Canadian tax calculator
 
-
  test("check add", () => {
-    expect(functions.add(1,1)).toEqual(2); 
-
-
-
-
-
-
+    expect(taxFunct.brack1(1)).toEqual(0.15); 
+ }
 
 
 //tests for Calculator
@@ -57,4 +51,5 @@ import functions from './functions'
 //     expect(functions.ifBeer(8)).toBe("Coffee time");
 //     expect(functions.addBack(["wildRose", "kokanee", "richardsRed", "blacksmith"]))
 //     .toEqual(["wildRose", "kokanee", "richardsRed", "blacksmith","coors"])
-//  expect(functions.beerSplice(["wildRose", "kokanee", "richardsRed", "blacksmith"], "pop")).toEqual(["pop", "kokanee", "richardsRed", "blacksmith"])
+//  expect(functions.beerSplice(["wildRose", "kokanee", "richardsRed",
+//  "blacksmith"], "pop")).toEqual(["pop", "kokanee", "richardsRed", "blacksmith"])
