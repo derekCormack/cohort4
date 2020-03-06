@@ -4,9 +4,8 @@ import functions from './functions'
 
 
  test("check add", () => {
-    expect(functions.add(1,1)).toEqual(2); 
-
-
+    expect(functions.brackets(1)).toEqual(0.15); 
+ });
 
 
 
@@ -57,4 +56,5 @@ import functions from './functions'
 //     expect(functions.ifBeer(8)).toBe("Coffee time");
 //     expect(functions.addBack(["wildRose", "kokanee", "richardsRed", "blacksmith"]))
 //     .toEqual(["wildRose", "kokanee", "richardsRed", "blacksmith","coors"])
-//  expect(functions.beerSplice(["wildRose", "kokanee", "richardsRed", "blacksmith"], "pop")).toEqual(["pop", "kokanee", "richardsRed", "blacksmith"])
+//  expect(functions.beerSplice(["wildRose", "kokanee", "richardsRed",
+// "blacksmith", "pop")).toEqual(["pop", "kokanee", "richardsRed", "blacksmith"])
