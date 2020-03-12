@@ -5,7 +5,41 @@ import functions from './functions.js';
 
 
 
-//  Calculator Event Listeners 100C
+
+//  Array Event Listeners 100D----------------------------
+
+
+idArrayAdd.addEventListener('click', (() => {
+    result.textContent = functions.add([arraySlot]);
+    console.log(arraySlot)
+}));
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//  Calculator Event Listeners 100C----------------------------
 
 
 addNums.addEventListener('click', (() => {
@@ -28,7 +62,7 @@ multiplyNums.addEventListener('click', (() => {
     
 }));
 
-// Canadian Income Tax 100C
+// Canadian Income Tax 100C--------------------------------------------
 
 
 // idButton.addEventListener('click', (() => {
