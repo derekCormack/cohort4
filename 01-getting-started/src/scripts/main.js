@@ -1,11 +1,33 @@
 import functions from './functions.js';
-
-// Add the event listeners
+const arrayNew=[];
+// Array Event listeners
  
+idAddArray.addEventListener('click', (() => {
+    idOutputArray.textContent = functions.addingArray(arrayNew, Number(idArrayIn.value));
+    
+}));
+
+idShowArray.addEventListener('click', (() => {
+    idOutputArray.textContent = functions.showArray([]);
+
+}));
+    
+
+idTotalArray.addEventListener('click', (() => {
+    idOutputArray.textContent = functions.addingArray(arrayNew, Number(idArrayIn.value));
+    
+}));
+
+idClearArray.addEventListener('click', (() => {
+    idOutputArray.textContent = functions.clearArr([]);
+
+}));
 
 
 
-//  Calculator Event Listeners 100C
+
+
+//  Calculator Event Listeners 100C--------------------------
 
 
 addNums.addEventListener('click', (() => {

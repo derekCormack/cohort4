@@ -1,4 +1,8 @@
-// --------------------- The functions FUNCTION -----------------------
+let x = 0;
+let inputOne = 0;
+// const arrayNew=[];
+
+// --------------------- The functions  -----------------------
 const rate1 = .15;  //tax rates and tax brackets for canadian tax function.
 const rate2 = .205;
 const rate3 = .26;
@@ -14,12 +18,35 @@ const range3 = (lim3 - lim2) * rate3;
 const range4 = (lim4 - lim3) * rate4;
 // var idIncome = num.toFixed(2);
 
-  
-
-// functions list
 
 const functions = {
-    
+        //   Array functions list-------------------------------
+
+    addingArray: (newArray, num) => {
+        newArray.push(num);  
+        return newArray;
+        },
+     
+    totalArr: (newArray) => {
+        let total = 0;
+         for (let i = 0; i < newArray.length; i++) 
+             total += newArray[i];
+             return total;
+        },
+
+    clearArray: (newArray) => {
+                 newArray = [];
+                 idOutputArrayt.getElementById("idClearArray").innerHTML="";
+                 
+        },
+
+    showArray: (newArray) => {
+        idOutputArray.getElementById("idShowArray").innerHTML=newArray;
+              
+   },
+
+
+    //  tax calc functions
     brackets: (receive) => {
         console.log(receive);
     if      (receive > lim4 ){
