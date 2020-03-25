@@ -1,5 +1,6 @@
 import functions from './functions.js';
 const arrayNew=[];
+
 // Array Event listeners
  
 idAddArray.addEventListener('click', (() => {
@@ -12,23 +13,21 @@ idShowArray.addEventListener('click', (() => {
 
 }));
     
-
 idTotalArray.addEventListener('click', (() => {
-    idOutputArray.textContent = functions.addingArray(arrayNew, Number(idArrayIn.value));
+    idOutputArray.textContent = "Bla bla bla"
+    const myValue = idArrayIn.value
+    console.log("NUmber(myValue) ",  Number(myValue))
+
+    // idOutputArray.textContent = functions.totalArray(arrayNew, Number(idArrayIn.value));
     
 }));
 
 idClearArray.addEventListener('click', (() => {
-    idOutputArray.textContent = functions.clearArr([]);
-
+    idOutputArrayt.getElementById("idClearArray").innerHTML = functions.clearArray([]);
+    
 }));
 
-
-
-
-
 //  Calculator Event Listeners 100C--------------------------
-
 
 addNums.addEventListener('click', (() => {
     result.textContent = functions.add(idNum1.value, idNum2.value);
@@ -50,12 +49,10 @@ multiplyNums.addEventListener('click', (() => {
     
 }));
 
+
 // Canadian Income Tax 100C
-
-
 // idButton.addEventListener('click', (() => {
 //     idTotal.textContent = brackets();
-
 // document.getElementsById(idButton).onclick =functions.brackets(idIncome);
 
 
