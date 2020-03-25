@@ -1,9 +1,81 @@
+<<<<<<< HEAD
 let x = 0;
 let inputOne = 0;
 // const arrayNew=[];
 
 // --------------------- The functions  -----------------------
 const rate1 = .15;  //tax rates and tax brackets for canadian tax function.
+=======
+// --------------------- The functions FUNCTION -----------------------
+
+//ARRAY PROBLEM
+
+
+const functions = {
+
+  
+    addToArray: (ArrayInput) => {
+        var ArrayModified;
+        ArrayModified.push("ArrayInput");
+        return console.log(ArrayModified[]);
+};
+
+//    showArray: (ArrayInput) => {
+//         var ArrayModified;
+//         ArrayModified.push("ArrayInput");
+//         return console.log(ArrayModified[]);
+// };
+
+        totalArray: (ArrayInput) => {
+        var sumOfArray = 0;
+        fo ( var i = 0, len =ArrayModified.length; i < len; i++) {
+            arrayTotal += myData[i][1]; // iterate over array, grab next element add up.
+
+        }
+        console.log(arrayTotal);
+        
+};
+
+// var fruits = ["Banana", "Orange", "Apple", "Mango"];
+// document.getElementById("demo").innerHTML = fruits.toString();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+//------------------------------------------------------------tax functions-------------
+
+//tax rates and tax brackets for canadian tax function.
+const rate1 = .15;  
+>>>>>>> 7fdea9a2d966dd523b135237351a81a48710c67a
 const rate2 = .205;
 const rate3 = .26;
 const rate4 = .29;
