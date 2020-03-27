@@ -1,81 +1,9 @@
-<<<<<<< HEAD
 let x = 0;
 let inputOne = 0;
 // const arrayNew=[];
 
 // --------------------- The functions  -----------------------
 const rate1 = .15;  //tax rates and tax brackets for canadian tax function.
-=======
-// --------------------- The functions FUNCTION -----------------------
-
-//ARRAY PROBLEM
-
-
-const functions = {
-
-  
-    addToArray: (ArrayInput) => {
-        var ArrayModified;
-        ArrayModified.push("ArrayInput");
-        return console.log(ArrayModified[]);
-};
-
-//    showArray: (ArrayInput) => {
-//         var ArrayModified;
-//         ArrayModified.push("ArrayInput");
-//         return console.log(ArrayModified[]);
-// };
-
-        totalArray: (ArrayInput) => {
-        var sumOfArray = 0;
-        fo ( var i = 0, len =ArrayModified.length; i < len; i++) {
-            arrayTotal += myData[i][1]; // iterate over array, grab next element add up.
-
-        }
-        console.log(arrayTotal);
-        
-};
-
-// var fruits = ["Banana", "Orange", "Apple", "Mango"];
-// document.getElementById("demo").innerHTML = fruits.toString();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-//------------------------------------------------------------tax functions-------------
-
-//tax rates and tax brackets for canadian tax function.
-const rate1 = .15;  
->>>>>>> 7fdea9a2d966dd523b135237351a81a48710c67a
 const rate2 = .205;
 const rate3 = .26;
 const rate4 = .29;
@@ -96,20 +24,24 @@ const functions = {
 
     addingArray: (newArray, num) => {
         newArray.push(num);
-        console.log(newArray)
         return newArray;
     },
 
-    totalArr: (newArray) => {
-        let total = 0;
-        for (let i = 0; i < newArray.length; i++)
-            total += newArray[i];
-        return total;
+    clearArray: (newArray) => {
+        return [];
     },
 
-    clearArray: (newArray) => {
-        newArray = [];
-    },
+    // notes
+    // totalArr: (newArray) => {
+    //     let total = 0;
+    //     for (let i = 0; 
+    //         i < newArray.length; i++)
+    //         total += newArray[i];
+    //     return total;
+    //     // return [0]
+},
+
+
 
     showArray: (newArray) => {
         idOutputArray.getElementById("idShowArray").innerHTML = newArray;
@@ -117,30 +49,30 @@ const functions = {
     },
 
 
-    //  tax calc functions
-    brackets: (receive) => {
-        console.log(receive);
-        if (receive > lim4) {
-            console.log(receive, lim4, rate5);
-            return Number(range1 + range2 + range3 + range4 + ((receive - lim4) * rate5));
+//  tax calc functions
+brackets: (receive) => {
+    console.log(receive);
+    if (receive > lim4) {
+        console.log(receive, lim4, rate5);
+        return Number(range1 + range2 + range3 + range4 + ((receive - lim4) * rate5));
 
-        } else if (receive > lim3) {
-            console.log(receive, lim4, rate4);
-            return Number(range1 + range2 + range3 + ((receive - lim3) * rate4));
+    } else if (receive > lim3) {
+        console.log(receive, lim4, rate4);
+        return Number(range1 + range2 + range3 + ((receive - lim3) * rate4));
 
-        } else if (receive > lim2) {
-            console.log(receive, lim3, rate3);
-            return Number(range1 + range2 + ((receive - lim2) * rate3));
+    } else if (receive > lim2) {
+        console.log(receive, lim3, rate3);
+        return Number(range1 + range2 + ((receive - lim2) * rate3));
 
-        } else if (receive > lim1) {
-            console.log(receive, lim2, rate2);
-            return Number(range1 + ((receive - lim1) * rate2));
+    } else if (receive > lim1) {
+        console.log(receive, lim2, rate2);
+        return Number(range1 + ((receive - lim1) * rate2));
 
-        } else {
-            console.log(receive, lim1, rate1);
-            return Number(receive * rate1);
-        };
-    },
+    } else {
+        console.log(receive, lim1, rate1);
+        return Number(receive * rate1);
+    };
+},
 
 
     size: (num) => {
@@ -149,21 +81,21 @@ const functions = {
         return "large";
     },
 
-    add: (num1, num2) => {
-        return Number(num1) + Number(num2);
-    },
+        add: (num1, num2) => {
+            return Number(num1) + Number(num2);
+        },
 
-    subtract: (num1, num2) => {
-        return Number(num1) - Number(num2);
-    },
+            subtract: (num1, num2) => {
+                return Number(num1) - Number(num2);
+            },
 
-    multiply: (num1, num2) => {
-        return Number(num1) * Number(num2);
-    },
+                multiply: (num1, num2) => {
+                    return Number(num1) * Number(num2);
+                },
 
-    divide: (num1, num2) => {
-        return Number(num1) / Number(num2);
-    },
+                    divide: (num1, num2) => {
+                        return Number(num1) / Number(num2);
+                    },
 
     // brackets: (taxableInc) => {
     //                 console.log("taxableInc");

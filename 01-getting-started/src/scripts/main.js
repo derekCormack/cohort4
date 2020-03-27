@@ -8,20 +8,24 @@ idAddArray.addEventListener('click', (() => {
 
 }));
 
-idShowArray.addEventListener('click', (() => {
-    idOutputArray.textContent = functions.showArray([]);
 
-}));
 
-idTotalArray.addEventListener('click', (() => {
-    id
-        <<<
-<<<< HEAD
+
+
+
+
+
+// idShowArray.addEventListener('click', (() => {
+//     idOutputArray.textContent = functions.showArray([]);
+
+// }));
+
+// idTotalArray.addEventListener('click', (() => {
+//     id
+
     // idOutputArray.textContent = functions.totalArray(arrayNew, Number(idArrayIn.value));
 
 
-}));
-=======
 
 //  Array Event Listeners 100D----------------------------
 

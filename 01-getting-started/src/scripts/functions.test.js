@@ -1,56 +1,34 @@
 import functions from './functions'
 
 
-<<<<<<< HEAD
 // Arrays tests-------------------------
 
-test('Array add number', () => {
-    expect(functions.addingArray(([1,2]),3)).toStrictEqual([1,2,3]);
+
+test('Array add to', () => {
+  expect(functions.addingArray(([0, 0]), 0)).toStrictEqual([0, 0, 0]);
 });
 
-test('Total Array', () => {
-  expect(functions.totalArr([2, 3, 5])).toStrictEqual(10);
+test('Array add to', () => {
+  expect(functions.addingArray(([1, 1]), 1)).toStrictEqual([1, 1, 1]);
 });
 
-test('Total Array', () => {
-  expect(functions.totalArr([1, 2, 3, 5])).toStrictEqual(11);
+test('clear Array ', () => {
+  expect(functions.clearArray([])).toEqual([]);
+
 });
 
-test('Clear Array', () => {
-  expect(functions.clearArray([])).toStrictEqual([]);
-=======
-// test for Array machine
+// test('sum of array parameters', () => {
+//   expect( functions.totalArr([5,3,4]) ).toContain(0);
+
+// });
 
 
-test('Does the dom functions work?', () => {
-    // expect(functions.add(1,2)).toBe(3);
-    // expect(functions.add(101,202)).toBe(303);
-    console.log("We are in the tests");
-    const element = domfuncs.buildCard();
-    expect(element).toBeTruthy();
-});
-
-
-test('Does the addBefore functions work?', () => {
-    // expect(functions.add(1,2)).toBe(3);
-    // expect(functions.add(101,202)).toBe(303);
-    const group = document.createElement("div");
-    const element = domfuncs.buildCard("First Insert");
-    group.appendChild(element);
-    // console.log(group);
-    // console.log(group.children);
-    // console.log(element.parentElement);
-    
-    expect(group.children.length).toBe(1);
-
-    const txt = 'New Element'
-    domfuncs.addBefore(element, txt);
-    expect(group.children.length).toBe(2);
-    expect(group.children[0].textContent.substr(0,11)).toBe(txt);
-    expect(group.children[1].textContent.substr(0,12)).toBe("First Insert");
-
->>>>>>> 7fdea9a2d966dd523b135237351a81a48710c67a
-});
+// test('total Array works as expected', () => {
+//   expect( totalArr([2, 3]) ).toEqual(5)
+// })
+// test('total Array works as expected', () => {
+//   expect( totalArr([2, 3]) .toEqual(5) )
+// })
 
 
 
@@ -61,8 +39,9 @@ test('Does the addBefore functions work?', () => {
 
 
 
-<<<<<<< HEAD
-=======
+// test('Array add number', () => {
+//   expect(functions.addingArray(([1, 2]), 3)).toStrictEqual([1, 2, 3]);
+// });
 
 
 
@@ -70,17 +49,33 @@ test('Does the addBefore functions work?', () => {
 
 
 
->>>>>>> 7fdea9a2d966dd523b135237351a81a48710c67a
+// test('Total Array', () => {
+//   expect(functions.totalArr([2, 3, 5])).toStrictEqual(10);
+// });
+
+// test('Total Array', () => {
+//   expect(functions.totalArr([1, 2, 3, 5])).toStrictEqual(11);
+// });
+
+// test('Clear Array', () => {
+//   expect(functions.clearArray([])).toStrictEqual([]);
+// });
+
+
+
+
+
+
+
+
+
+
 // tests for Canadian tax calculator
 
 
 //  test("check add", () => {
 //     expect(functions.brackets(1)).toEqual(0.15); 
 //  });
-<<<<<<< HEAD
-
-=======
->>>>>>> 7fdea9a2d966dd523b135237351a81a48710c67a
 
 /*
  test('two plus two is four', () => {
@@ -106,7 +101,7 @@ test('Does the addBefore functions work?', () => {
    expect(n).not.toBeTruthy();
    expect(n).toBeFalsy();
  });
- 
+
  test('zero', () => {
    const z = 0;
    expect(z).not.toBeNull();
@@ -118,7 +113,7 @@ test('Does the addBefore functions work?', () => {
  test('there is no I in team', () => {
    expect('team').not.toMatch(/I/);
  });
- 
+
  test('but there is a "stop" in Christoph', () => {
    expect('Christoph').toMatch(/stop/);
  });
@@ -129,7 +124,7 @@ test('Does the addBefore functions work?', () => {
    'paper towels',
    'beer',
  ];
- 
+
  test('the shopping list has beer on it', () => {
    expect(shoppingList).toContain('beer');
    expect(new Set(shoppingList)).toContain('beer');
@@ -137,20 +132,20 @@ test('Does the addBefore functions work?', () => {
  function compileAndroidCode() {
    throw new Error('you are using the wrong JDK');
  }
- 
+
  test('compiling android goes as expected', () => {
    expect(compileAndroidCode).toThrow();
    expect(compileAndroidCode).toThrow(Error);
- 
+
    // You can also use the exact error message or a regexp
    expect(compileAndroidCode).toThrow('you are using the wrong JDK');
    expect(compileAndroidCode).toThrow(/JDK/);
  });
 
 //truthiness---------------------------------------------------------
- In tests you sometimes need to distinguish between undefined, 
- null, and false, but you sometimes do not want to treat these 
- differently. Jest contains helpers that let you be 
+ In tests you sometimes need to distinguish between undefined,
+ null, and false, but you sometimes do not want to treat these
+ differently. Jest contains helpers that let you be
  explicit about what you want.
 
 toBeNull matches only null
@@ -166,7 +161,7 @@ test('null', () => {
    expect(n).not.toBeTruthy();
    expect(n).toBeFalsy();
  });
- 
+
  test('zero', () => {
    const z = 0;
    expect(z).not.toBeNull();
@@ -199,7 +194,7 @@ test('null', () => {
 //     expect(functions.divide(8,2)).toEqual(4); 
 //     expect(functions.divide("10","5")).toEqual(2); 
 // });
- 
+
 // test("multiply", () => {
 //     expect(functions.multiply(3,2)).toEqual(6); 
 //     expect(functions.multiply("10","5")).toEqual(50); 
@@ -212,7 +207,7 @@ test('null', () => {
 // expect(functions.divide(4,2)).toEqual(8); 
 
 
- 
+
 //     expect(functions.add(1,1)).toBe(2); 
 //     expect(functions.makePizza("mushroom","pepperoni")).
 //     toBe("mushroom pepperoni"); 
