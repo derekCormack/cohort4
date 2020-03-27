@@ -14,13 +14,21 @@ test('Array add to', () => {
 
 test('clear Array ', () => {
   expect(functions.clearArray([])).toEqual([]);
-
+  expect(functions.clearArray([1,5])).toEqual([]);
+  
 });
 
-// test('sum of array parameters', () => {
-//   expect( functions.totalArr([5,3,4]) ).toContain(0);
+test('sum of array parameters', () => {
+  expect(functions.totalArr([1,2])).toBe(3);
+  expect(functions.totalArr([3,7,10])).toBe(20);
+  expect(functions.totalArr([3,7,20])).not.toBe(19);
+  // expect(functions.totalArr([])).toBe(0);
+  
 
-// });
+  
+
+  
+});
 
 
 // test('total Array works as expected', () => {
