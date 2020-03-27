@@ -3,65 +3,16 @@ const arrayNew = [];
 
 // Array Event listeners
 
+console.log("is this working from main.js")
 idAddArray.addEventListener('click', (() => {
-    idOutputArray.textContent = functions.addingArray(arrayNew, Number(idArrayIn.value));
-
+    // idOutputArray.textContent = functions.addingArray(arrayNew, Number(idArrayIn.value));
+    console.log("hello from AddEvent");
 }));
-
-
-
-
-
-
-
-
-// idShowArray.addEventListener('click', (() => {
-//     idOutputArray.textContent = functions.showArray([]);
-
-// }));
-
-// idTotalArray.addEventListener('click', (() => {
-//     id
-
-    // idOutputArray.textContent = functions.totalArray(arrayNew, Number(idArrayIn.value));
-
-
-
-//  Array Event Listeners 100D----------------------------
-
-
-idArrayAdd.addEventListener('click', (() => {
-    result.textContent = functions.add([arraySlot]);
-    console.log(arraySlot)
-}));
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
 //  Calculator Event Listeners 100C----------------------------
->>>>>>> 7fdea9a2d966dd523b135237351a81a48710c67a
+
 
 idClearArray.addEventListener('click', (() => {
     idOutputArrayt.getElementById("idClearArray").innerHTML = functions.clearArray([]);
@@ -90,11 +41,6 @@ multiplyNums.addEventListener('click', (() => {
 
 }));
 
-<<<<<<< HEAD
-=======
-// Canadian Income Tax 100C--------------------------------------------
-
->>>>>>> 7fdea9a2d966dd523b135237351a81a48710c67a
 
 // Canadian Income Tax 100C
 // idButton.addEventListener('click', (() => {

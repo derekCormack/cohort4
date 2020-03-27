@@ -43,12 +43,7 @@ const functions = {
         return total;
 
     },
-    //     let total = 0;
-    // for (let i = 0; 
-    //     i < newArray.length; i++)
-    //     total += newArray[i];
-    // return total;
-    //     // return [0]
+  
 
 
 
