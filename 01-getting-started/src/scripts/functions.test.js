@@ -22,14 +22,8 @@ test('sum of array parameters', () => {
   expect(functions.totalArr([1, 2])).toBe(3);
   expect(functions.totalArr([3, 7, 10])).toBe(20);
   expect(functions.totalArr([3, 7, 20])).not.toBe(19);
-
-
-
-
-
-
+  expect(functions.totalArr([2, 2, 2])).toBe(6);
 });
-
 
 // test('total Array works as expected', () => {
 //   expect( totalArr([2, 3]) ).toEqual(5)

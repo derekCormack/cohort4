@@ -15,15 +15,32 @@ const lim4 = 214368;
 const range1 = lim1 * rate1;     //tax per range
 const range2 = (lim2 - lim1) * rate2;
 const range3 = (lim3 - lim2) * rate3;
-const range4 = (lim4 - lim3) * rate4;
-// var idIncome = num.toFixed(2);
+const range4 = (lim4 - lim3) * rate4; // var idIncome = num.toFixed(2);
+//dictionary assignment
+const dictionary = { 'AB': 'Alberta', 'ON': 'Ontario', 'BC': 'British Columbia', 'MN': 'Manitoba',
+'NL': 'NewfoundlandLabrador', 'SK': 'Saskatchewan', 'NB': 'NewBrunswick','NS': 'NovaScotia', 'QC': 'Quebec'}
+
 
 
 const functions = {
+
+   //   Dictionary functions list-------------------------------
+    lookupObject: (key, value) => {
+        let value = dictionary[key.toUpperCase()]; //has(key){boolean return} 
+
+
+        //dictionary[key] = value;  //this sentence will add a new key-value pair inside dict.
+        console.log(dictionary);
+        console.log("value to be returned: ", value);
+        return value;
+    },
+
     //   Array functions list-------------------------------
+    //typescript syntax: addingArray: (newArray : [], num : int) => {
 
     addingArray: (newArray, num) => {
-        newArray.push(num);
+        newArray.push(parseInt(num));
+        console.log(newArray);
         return newArray;
     },
 
@@ -33,15 +50,12 @@ const functions = {
 
 
     totalArr: (newArray) => {
-
         let total = 0;
-        for (let i = 0;i < newArray.length;
-             i++) {
+        for (let i = 0; i < newArray.length; i++) {
             total += newArray[i];
         }
-
+        console.log("Before returning total", total);
         return total;
-
     },
   
 
