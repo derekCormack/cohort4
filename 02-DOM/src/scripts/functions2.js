@@ -1,7 +1,7 @@
 let i = 0;
 
 const functions2 = {
-    
+
     createCard(resultDiv) {
         i++;    //i = i + 1;
         var parentDiv = document.createElement("div");     //This is parent div where all elements will be appended
@@ -12,7 +12,7 @@ const functions2 = {
         var pTag = document.createElement("p");           //This creates empty p tag - <p> </p>
         pTag.textContent = "Card " + i;
         pTag.setAttribute("class", "text-align");
-        
+
 
         // var pText = document.createTextNode("Card " + i); //This adds the texs inside p tag - Card 1
         // pTag.append(pText);                               //This appends pText to pTag - <p> Card 1 </p>
@@ -24,7 +24,7 @@ const functions2 = {
         var addBeforeButton = document.createElement("button");// add before button
         var addBeforeText = document.createTextNode("Add Before");
         addBeforeButton.append(addBeforeText);
-        
+
 
         var addAfterButton = document.createElement("button");// add after button
         var addAfterText = document.createTextNode("Add After");
@@ -56,13 +56,13 @@ const functions2 = {
     },
 
     deleteCard(event) {
-        if(event.target.id.includes("buttonDelete")) { //buttonDelete1, buttonDelete2
+        if (event.target.id.includes("buttonDelete")) { //buttonDelete1, buttonDelete2
             var cardToBeDeleted = event.target.parentNode.parentNode;  //returns a card
             resultDiv.removeChild(cardToBeDeleted);
         }
     },
 
-    addAfter(event) {   
+    addAfter(event) {
         var card = event.target.parentNode.parentNode;
         //replacing the card with it's next sibling and this returns the next sibling
         var removedCard = resultDiv.replaceChild(card, card.nextSibling);
@@ -82,7 +82,7 @@ const functions2 = {
         var liItem = document.createElement("li")       // <li> </li>
         var liName = document.createTextNode(element);
         liItem.append(liName);              // <li> Item 1 </li>
-    
+
         olId.append(liItem);
     },
 
