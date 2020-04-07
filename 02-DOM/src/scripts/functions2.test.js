@@ -1,15 +1,6 @@
  import functions2 from './functions2.js'
 
-//  document.body.innerHTML =
-//  `<div  class="w3-gray" id="mainDivId">` +
-//  `<h1 style="text-align: center;" >Working With Cards</h1>` +
-//  `<div style="margin:auto; text-align: center;">` +
-//  `<button id="idAddCard">Add Card</button>` +
-//  `</div>`+
-//  `<div id="resultDiv">` +
-//  `</div>` +
-//  `</div>`;   // hardcode starting DOM to be manipulated
- 
+
 // // Card TDD test   -------------------------
 //     <div class="w3-card" style="" id="card1">
     //     <p>Card 1</p>
@@ -62,7 +53,18 @@
       expect(resultDivCard.children[0].childNodes[1].firstElementChild.textContent).toBe("Add Before");
   });
 
+// JSX type build DOM in JS re-blair    (not used...seemed like an ineffective approach
+//  as we should be testing dom as its being created)
 
+//  document.body.innerHTML =
+//  `<div  class="w3-gray" id="mainDivId">` +
+//  `<h1 style="text-align: center;" >Working With Cards</h1>` +
+//  `<div style="margin:auto; text-align: center;">` +
+//  `<button id="idAddCard">Add Card</button>` +
+//  `</div>`+
+//  `<div id="resultDiv">` +
+//  `</div>` +
+//  `</div>`;   // hardcode starting DOM to be manipulated
 
 
 // expect($('#username').text()).toEqual('Johnny Cash - Logged In');
@@ -80,64 +82,7 @@
 // import domfuncs from './domfunc'
 
 
-// test('Does the dom functions work?', () => {
-//     // expect(functions.add(1,2)).toBe(3);
-//     // expect(functions.add(101,202)).toBe(303);
-//     console.log("We are in the tests");
-//     const element = domfuncs.buildCard();
-//     expect(element).toBeTruthy();
-// });
 
-
-// test('Does the addBefore functions work?', () => {
-//     // expect(functions.add(1,2)).toBe(3);
-//     // expect(functions.add(101,202)).toBe(303);
-//     const group = document.createElement("div");
-//     const element = domfuncs.buildCard("First Insert");
-//     group.appendChild(element);
-//     // console.log(group);
-//     // console.log(group.children);
-//     // console.log(element.parentElement);
-    
-//     expect(group.children.length).toBe(1);
-
-//     const txt = 'New Element'
-//     domfuncs.addBefore(element, txt);
-//     expect(group.children.length).toBe(2);
-//     expect(group.children[0].textContent.substr(0,11)).toBe(txt);
-//     expect(group.children[1].textContent.substr(0,12)).toBe("First Insert");
-
-// });
-
-
-// test('Does the after functions work?', () => {
-//     // expect(functions.add(1,2)).toBe(3);
-//     // expect(functions.add(101,202)).toBe(303);
-//     const group = document.createElement("div");
-//     const element = domfuncs.buildCard("First Insert");
-//     group.appendChild(element);
-
-//     const second = domfuncs.buildCard("Second");
-
-//    element.after(second);
-//     // group.appendChild(second);
-
-//     let node = domfuncs.buildCard("one.one");
-
-//     second.before(node);
-
-//     console.log(group);
-//     console.log(group.children[0].textContent);
-//     console.log(group.children[1].textContent);
-//     console.log(group.children[2].textContent);
-
-// });
-
-
-//
-// npm test dom-p3 -- -t plumb
-//
-// import domP3 from './dom-p3'
 
 // test('Does the plumbing work?', () => {
     
@@ -191,12 +136,7 @@
 
 //   parent.children[0].after(div);
 
-
-
 //   // div.appendChild(txtstuff);
-
-
-
 
 //   console.log(parent.children.length);
 //   console.log(parent.children[0]);
@@ -205,17 +145,8 @@
 //   console.log(parent.children[1].textContent);
 //   console.log(parent.children[2]);
 //   console.log(parent.children[2].textContent);
-
-//   document.body.append(div);
-  
-  
-//   // console.log(div.textContent);
-//   // console.log(div);
-//   // console.log(div);
   
 // });
-
-
 
 
 // // const element = domfuncs.buildCard();
@@ -223,7 +154,6 @@
 
 //   // expect(functions.add(1,2)).toBe(3);
 //   // expect(functions.add(101,202)).toBe(303);
-
 
 // // const div = document.createElement('div');
 // // div.appendChild(document.createTextNode(text));
@@ -252,9 +182,6 @@
 //     console.log(group.children[0].textContent);
 
 // });
-
-
-
 // test('Does the addDiv work?', () => {
 //     const group = document.createElement('div');
 //     const txt = "First Node"
