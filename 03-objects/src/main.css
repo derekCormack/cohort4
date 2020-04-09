@@ -1,0 +1,123 @@
+.card {
+    margin: auto;
+    width: 500px;
+    height: 600px;
+    background-color: gray;
+}
+
+h2 {
+    text-align: center;
+    color: white;
+}
+
+.divAccName {
+    width: 90%;
+    padding: 8px 8px;
+    margin: auto;
+    box-sizing: border-box;
+    border: 2px solid rgb(18, 8, 156);
+    border-radius: 10px;
+    background-color: lightblue;
+}
+
+.divAccInitDeposit {
+    width: 90%;
+    padding: 8px 8px;
+    margin: auto;
+    box-sizing: border-box;
+    border: 2px solid rgb(18, 8, 156);
+    border-radius: 10px;
+    background-color: rgb(182, 243, 174);
+}
+
+.divCreateButton {
+    padding: 8px 8px;
+    text-align: center;
+}
+
+#idCreateAccButton {
+    background-color: #4CAF50;
+    border: none;
+    color: rgb(4, 13, 49);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+}
+
+.divDepositButton {
+    padding: 12px 20px;
+    text-align: center;
+}
+
+#idDeposit {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: rgb(4, 13, 49);
+    border-radius: 12px;
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+}
+
+.divWithdrawlButton {
+    padding: 12px 20px;
+    text-align: center;
+}
+
+#idWithdrawl {
+    padding: 10px;
+    background-color: #4CAF50;
+    border: none;
+    color: rgb(4, 13, 49);
+    border-radius: 12px;
+    padding: 8px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 12px;
+    margin: 2px 2px;
+    background-color: rgba(180, 13, 13, 0.849);
+}
+
+
+.divDeposit {
+    width: 90%;
+    padding: 8px 8px;
+    margin: auto;
+    box-sizing: border-box;
+    border: 2px solid rgb(23, 104, 2);
+    border-radius: 10px;
+    background-color: rgb(182, 243, 174);
+}
+
+.divWithdrawl {
+    width: 90%;
+    padding: 8px 8px;
+    margin: auto;
+    box-sizing: border-box;
+    border: 2px solid rgba(180, 13, 13, 0.849);
+    border-radius: 10px;
+    background-color: rgba(233, 98, 98, 0.472);
+}
+
+.runningTotal {
+    width: 90%;
+    padding: 8px 8px;
+    margin: auto;
+    box-sizing: border-box;
+    border: 2px solid rgb(18, 8, 156);
+    border-radius: 10px;
+    background-color: lightblue;
+}
+
+.margin {
+    margin-top: 20px;
+}

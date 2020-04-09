@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<link rel="stylesheet" href="main.css">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Account Interface</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<!-- Create New Account---------
+     input:   enter initial deposit:
+     button: create account
+     button: deposit
+     Button: withdrawl
+     Output:  Current Balance:
+
+  Choose account-----------
+     pull down:  choose account
+     input:  enter amount
+     button: deposit
+     Button: withdrawl
+     Output:  Current Balance:
+-->
+
+<body>
+  <div class="card" id="idCard">
+    <h2> Account Controller </h2>
+    <div class="divAccName">
+      <span>Account Name: </span>
+      <input id="idAccountName" placeholder="Account Name">>
+    </div>
+    <div class="divAccInitDeposit margin">
+      <span>Initial Deposit: </span>
+      <input id="idAccInitialBalance" placeholder="0.00">
+    </div>
+    <br>
+    <div class="divCreateButton">
+      <button id="idCreateAccButton">Create Account</button>
+      <p>___________________________________________________</p>
+    </div>
+    <br><br>
+    <!-- 
+account dropdown here? -->
+
+    <div>
+      <div class="divDeposit">
+        <span>Deposit: </span>
+        <input id="idAccDepositBalance" placeholder="0.00">
+      </div>
+      <div class="divDepositButton">
+        <button id="idDeposit">Deposit</button>
+      </div>
+    </div>
+
+    <div>
+      <div class="divWithdrawl">
+        <span>Withdrawl: </span>
+        <input id="idAccWithdrawlBalance" placeholder="0.00">
+      </div>
+      <div class="divWithdrawlButton">
+        <button id="idWithdrawl">Withdrawl</button>
+      </div>
+    </div>
+
+    <div class="runningTotal">
+      <span>Updated Balance: </span>
+      <input id="runningTotal" placeholder="0.00">
+    </div>
+      
+    
+  </div>
+
+  <script src="scripts/main.js" type="module"></script>
+</body>
+
+</html>
