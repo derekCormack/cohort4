@@ -26,6 +26,9 @@
      Button: withdrawl
      Output:  Current Balance:
 -->
+<!--  1. Div - whatever you put has to be inside div 
+            2. span - if you have single line of text 
+            3. p - if you have multiple lines of text because it's paragraph -->
 
 <body>
   <div class="card" id="idCard">
@@ -36,7 +39,16 @@
     </div>
     <div class="divAccInitDeposit margin">
       <span>Initial Deposit: </span>
-      <input id="idAccInitialBalance" placeholder="$0.00">
+      <input type="number" id="idAccInitialBalance" placeholder="$0.00">
+    </div>
+    <div class="divAccType">
+      <span>Account Type: </span>
+      <select id="idAccountTypes">
+        <option value="chequing1">chequing1</option>
+        <option value="chequing2">chequing2</option>
+        <option value="savings1">savings1</option>
+        <option value="savings2">savings2</option>
+      </select>
     </div>
     <br>
     <div class="divCreateButton">
@@ -50,7 +62,7 @@ account dropdown here? -->
     <div>
       <div class="divDeposit">
         <span>Deposit: </span>
-        <input id="idAccDepositBalance" placeholder="$0.00">
+        <input type="number" id="idAccDepositBalance" placeholder="$0.00">
       </div>
       <div class="divDepositButton">
         <button id="idDeposit">Deposit</button>
@@ -60,7 +72,7 @@ account dropdown here? -->
     <div>
       <div class="divWithdrawl">
         <span>Withdrawl: </span>
-        <input id="idAccWithdrawlBalance" placeholder="$0.00">
+        <input type="number" id="idAccWithdrawlBalance" placeholder="$0.00">
       </div>
       <div class="divWithdrawlButton">
         <button id="idWithdrawl">Withdrawl</button>
@@ -69,10 +81,11 @@ account dropdown here? -->
 
     <div class="runningTotal">
       <span>Updated Balance: </span>
-      <input id="runningTotal" placeholder="$0.00">
+      <!-- OUTPUT -->
+      <input id="idRunningTotal" placeholder="$0.00">
     </div>
-      
-    
+
+
   </div>
 
   <script src="scripts/main.js" type="module"></script>

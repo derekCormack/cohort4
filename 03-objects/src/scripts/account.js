@@ -3,11 +3,13 @@ class Account {
     //properties of Account class...
     accountName = '';
     currentBalance = 0;
+    accountType = '';
 
     //Initializing a constructor
-    constructor(accName, startingBalance) {
+    constructor(accName, startingBalance, accType) {
         this.accountName = accName;
         this.currentBalance = startingBalance;
+        this.accountType = accType;
     }
 
     deposit(value) {
@@ -25,9 +27,6 @@ class Account {
     show() {
         return this.currentBalance;
     }
-
-    
-
     
 }
 
