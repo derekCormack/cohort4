@@ -84,5 +84,9 @@ buttonAccountInfo.addEventListener("click", () => {
     lowestAccountBalance.innerHTML = accountController.getLowestBalance();
 })
 
+// delete button
+
+delete account here.addEventListener("click", () => {
+    alert("Confirm account delete");
 
 
