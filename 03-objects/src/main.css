@@ -1,13 +1,14 @@
 .card {
     margin: auto;
     width: 500px;
-    height: 600px;
+    height: 800px;
     background-color: gray;
 }
 
-h2 {
+h3 {
     text-align: center;
-    color: rgb(10, 7, 6);
+    color: rgb(10, 7, 6); 
+       
 }
 
 .divAccName {
@@ -32,7 +33,7 @@ h2 {
 
 .divCreateButton {
     padding: 8px 8px;
-    text-align: center;
+    text-align: right;
     margin-top: -20px;
 }
 

@@ -13,6 +13,12 @@ var depositButton =document.getElementById("idDeposit");
 var withdrawlButton =document.getElementById("idWithdrawl");
 var runningBalance = document.getElementById("idRunningTotal");
 var withdrawlInput = document.getElementById("idAccWithdrawlBalance");
+var accountTypeDepWithd = document.getElementById("idSelectDepWithd");
+var availableAccountsDiv = document.getElementById("idAvailableAccounts");
+var totalAccountbalance = document.getElementById("idTotalAccountBalance");
+var highestAccountBalance = document.getElementById("idHighestAccountBalance");
+var lowestAccountBalance = document.getElementById("idLowestAccountBalance");
+var buttonAccountInfo = document.getElementById("buttonAccountInfo");
 
 var account;   //define account CLASS
 
@@ -32,6 +38,13 @@ createAcctButton.addEventListener("click", () => {
    runningBalance.value = account.currentBalance;
    //**storing ALL accounts to accountcontroller***/
    accountController.addAccount(account);
+   availableAccountsDiv.innerHTML = " "; //clears value
+   const accArray = accountController.getAccounts();  //get all accounts from accounts array
+   let allAccountsString = "";
+   accArray.forEach(acc => {
+    allAccountsString = allAccountsString + '<br>' + accountController.printAccount(acc);
+   })
+   availableAccountsDiv.innerHTML = allAccountsString;
 });
 
 //This is for "Deposit" Button
@@ -50,5 +63,26 @@ withdrawlButton.addEventListener("click", () => {
     console.log("Current Balance: ", account.currentBalance); 
     runningBalance.value = account.currentBalance;
 });
+
+// this is for changing acct type before dep/withd, "change "
+
+accountTypeDepWithd.addEventListener("change", (event) => {
+    if(event.target.value) {
+        let selectedAccount = accountController.changeAccount(event.target.value);
+        account = selectedAccount; //Change account only when user changes the account type in dropdown
+        console.log(account);
+        if(account.currentBalance) {
+            runningBalance.value = account.currentBalance;
+        }
+    }
+});
+
+buttonAccountInfo.addEventListener("click", () => {
+    //Getting all information about account on button click
+    totalAccountbalance.innerHTML = accountController.getTotal();
+    highestAccountBalance.innerHTML = accountController.getHighestBalance();
+    lowestAccountBalance.innerHTML = accountController.getLowestBalance();
+})
+
 
 

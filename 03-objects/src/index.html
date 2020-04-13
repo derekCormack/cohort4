@@ -32,7 +32,8 @@
 
 <body>
   <div class="card" id="idCard">
-    <h2> Account Controller </h2>
+    <h3>New Account Generation</h3>
+
     <div class="divAccName">
       <span>Account Name: </span>
       <input id="idAccountName" placeholder="Account Name">
@@ -49,40 +50,78 @@
         <option value="savings1">savings1</option>
         <option value="savings2">savings2</option>
       </select>
+
+      <span class="divCreateButton"><button id="idCreateAccButton">Create Account</button></span>
     </div>
-    <br>
-    <div class="divCreateButton">
-      <button id="idCreateAccButton">Create Account</button>
-      <p>__________________________________________________</p>
-    </div>
-    <br><br>
     <!-- 
 account dropdown here? -->
+        <h3> Debit/Credit Account</h3>
+        <div class="divAccType">
+         
+          <span>Account Type: </span>
+          
+          <span>Account Type: </span>
+          <select id="idSelectDepWithd">
+            <option value="chequing1">chequing1</option>
+            <option value="chequing2">chequing2</option>
+            <option value="savings1">savings1</option>
+            <option value="savings2">savings2</option>
+          </select>
+          <span class="#idWithdrawl"><button id="idWithdrawl">Delete account</button></span>
+        </div>
+        <br>
 
     <div>
       <div class="divDeposit">
         <span>Deposit: </span>
         <input type="number" id="idAccDepositBalance" placeholder="$0.00">
+        <span class="divDepositButton">
+          <button id="idDeposit">Deposit</button>
+        </span>
       </div>
-      <div class="divDepositButton">
-        <button id="idDeposit">Deposit</button>
-      </div>
+      
     </div>
 
     <div>
-      <div class="divWithdrawl">
+      <div class="divWithdrawl" style="margin-top: 10px;">
         <span>Withdrawl: </span>
         <input type="number" id="idAccWithdrawlBalance" placeholder="$0.00">
+        <span class="divWithdrawlButton">
+          <button id="idWithdrawl">Withdrawl</button>
+        </span>
       </div>
-      <div class="divWithdrawlButton">
-        <button id="idWithdrawl">Withdrawl</button>
-      </div>
+      
     </div>
 
-    <div class="runningTotal">
+    <div class="runningTotal" style="margin-top: 10px;">
       <span>Updated Balance: </span>
       <!-- OUTPUT -->
       <input id="idRunningTotal" placeholder="$0.00">
+    </div>
+
+    <div>
+      <span>Available Accounts: </span>
+      <!-- OUTPUT -->
+      <div id="idAvailableAccounts">
+        <!-- We will print user accounts here -->
+      </div>
+      
+      <div>
+        <h5>Account Information: </h5>
+      <button id="buttonAccountInfo">Info</button>
+      <span>Total Balance: </span>
+      <div id="idTotalAccountBalance">
+        <!-- We will print total of all accounts here -->
+      </div>
+      <span>Highest Balance </span>
+      <div id="idHighestAccountBalance">
+        <!-- We will print highest account balance here -->
+      </div>
+      <span>Lowest Balance: </span>
+      <div id="idLowestAccountBalance">
+        <!-- We will print lowest account balance here -->
+      </div>
+      </div>
     </div>
 
 
