@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html class="no-js">
+
+<link rel="stylesheet" href="main.css">
+
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>Account Interface</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="">
+</head>
+
+<!-- Create New Account---------
+     input:   enter initial deposit:
+     button: create account
+     button: deposit
+     Button: withdrawl
+     Output:  Current Balance:
+
+  Choose account-----------
+     pull down:  choose account
+     input:  enter amount
+     button: deposit
+     Button: withdrawl
+     Output:  Current Balance:
+-->
+<!--  1. Div - whatever you put has to be inside div 
+            2. span - if you have single line of text 
+            3. p - if you have multiple lines of text because it's paragraph -->
+
+<body>
+  <div class="card" id="idCard">
+    <h3>New Account Generation</h3>
+
+    <div class="divAccName">
+      <span>Account Name: </span>
+      <input id="idAccountName" placeholder="Account Name">
+    </div>
+    <div class="divAccInitDeposit margin">
+      <span>Initial Deposit: </span>
+      <input type="number" id="idAccInitialBalance" placeholder="$0.00">
+    </div>
+    <div class="divAccType">
+      <span>Account Type: </span>
+      <select id="idAccountTypes">
+        <option value="chequing1">chequing1</option>
+        <option value="chequing2">chequing2</option>
+        <option value="savings1">savings1</option>
+        <option value="savings2">savings2</option>
+      </select>
+
+      <span class="divCreateButton"><button id="idCreateAccButton">Create Account</button></span>
+    </div>
+    <!-- 
+account dropdown here? -->
+    <h3> Debit/Credit Account</h3>
+    <div class="divAccType">
+
+      <span>Account Type: </span>
+
+      <select id="idSelectDepWithd">
+        <!-- <option value="chequing1">chequing1</option>
+        <option value="chequing2">chequing2</option>
+        <option value="savings1">savings1</option>
+        <option value="savings2">savings2</option> -->
+      </select>
+      <span class="#idWithdrawl">
+        <button id="idDeleteAccount">Delete account</button>
+      </span>
+    </div>
+    <br>
+
+    <div>
+      <div class="divDeposit">
+        <span>Deposit: </span>
+        <input type="number" id="idAccDepositBalance" placeholder="$0.00">
+        <span class="divDepositButton">
+          <button id="idDeposit">Deposit</button>
+        </span>
+      </div>
+
+    </div>
+
+    <div>
+      <div class="divWithdrawl" style="margin-top: 10px;">
+        <span>Withdrawl: </span>
+        <input type="number" id="idAccWithdrawlBalance" placeholder="$0.00">
+        <span class="divWithdrawlButton">
+          <button id="idWithdrawl">Withdrawl</button>
+        </span>
+      </div>
+
+    </div>
+
+    <div class="runningTotal" style="margin-top: 10px;">
+      <span>Updated Balance: </span>
+      <!-- OUTPUT -->
+      <input id="idRunningTotal" placeholder="$0.00">
+    </div>
+
+    <div>
+
+      <!-- OUTPUT -->
+      <h3> Available Accounts </h3>
+      <div id="idAvailableAccounts">
+        <!-- We will print user accounts here -->
+      </div>
+
+      <div style="margin-top: 10px;">
+        <span class="divInfo">
+          <button type="button" id="buttonAccountInfo">View Balances</button>
+        </span>
+      </div>
+      <div class="runningTotal" style="margin-top: 10px;">
+        <span>Total Balance: </span>
+        <!-- OUTPUT -->
+        <input id="idTotalAccountBalance" >
+      </div>
+      <div class="runningTotal" style="margin-top: 10px;">
+        <span>Highest Balance: </span>
+        <!-- OUTPUT -->
+        <input id="idHighestAccountBalance" >
+      </div>
+      <div class="runningTotal" style="margin-top: 10px;">
+        <span>Lowest Balance: </span>
+        <!-- OUTPUT -->
+        <input id="idLowestAccountBalance" >
+      </div>
+    </div>
+  </div>
+  <script src="scripts/main.js" type="module"></script>
+</body>
+
+</html>
