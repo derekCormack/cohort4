@@ -18,17 +18,19 @@ class City {
     movedIn(number) {
         if(number) {
             this.population = this.population + number;
+            return this.population;
         }
     }
 
     movedOut(number) {
         if(number) {
             this.population = this.population - number;
+            return this.population;
         }
     }
      
     howBig(number) {
-        if(number >= 100000){
+        if(number >= 100000) {
             return "City";
         } else if(number >= 20000 && number < 100000) {
             return "Large town";
@@ -36,9 +38,9 @@ class City {
             return "Town";
         } else if(number >= 100 && number < 1000) {
             return "Village";
-        } else if(number === 1 && number < 100) {
+        } else if(number >= 1 && number < 100) {
             return "Hamlet";
-        }  else {
+        } else {
             return "Nobody lives here!";
         }    
     }
