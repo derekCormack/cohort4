@@ -14,14 +14,14 @@ class Community {
         }
     }
 
-    getMostNorthern(lat) {
+    getMostNorthern() {
         //returns northern
         //get the most positive value
         let mostNorthern = 0;
         let cityToBeReturned = undefined;
         this.cities.forEach(city => {
-            if (city.latitude > 0 && this.latitude <= 90) {
-                if (city.latitude > mostNorthern) {
+            if (parseInt(city.latitude) > 0 && parseInt(city.latitude) <= 90) {  // wierd concat issue solved with parseInt
+                if (parseInt(city.latitude) > mostNorthern) {
                     cityToBeReturned = city;
                 }
             }
@@ -29,14 +29,17 @@ class Community {
         return cityToBeReturned;
     }
 
-    getMostSouthern(lat) {
+    getMostSouthern() {
         // returns southern
         //get the most negative value
         let mostSouthern = 0;
         let cityToBeReturned = undefined;
+        mostSouthern = this.cities[0].latitude;   // store -19
+        console.log("Length of city: ", this.cities.length);
         this.cities.forEach(city => {
-            if (city.latitude < 0 && this.latitude >= -90) {
-                if (city.latitude < mostSouthern) {
+            console.log("City inside: ", city.latitude);
+            if (parseInt(city.latitude) < 0 && parseInt(city.latitude) >= -90) {
+                if (parseInt(city.latitude) < mostSouthern) {
                     cityToBeReturned = city;
                 }
             }
@@ -52,10 +55,8 @@ class Community {
         return totalPopulation;
     }
 
-    createCity(name, lat, long, pop) {
-        let city = new City(name, lat, long, pop);
+    createCity(city) {
         this.cities.push(city);
-        return city;
     }
 
     deleteCity(cityName) {
