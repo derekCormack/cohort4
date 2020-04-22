@@ -1,16 +1,15 @@
 <!DOCTYPE html>
 
-<html class="no-js">
-
+<html>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <title></title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
         integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-    <link rel="stylesheet" href="">
 </head>
 
 <body>
@@ -18,12 +17,6 @@
         <div class="card">
             <h5 class="card-header">Community and City</h5>
             <div class="card-body">
-                <div id="control-container">
-                    <button type="button" class="btn btn-primary">Create City</button>
-                    <button type="button" class="btn btn-primary">Population</button>
-                    <button type="button" class="btn btn-primary">Most Northern</button>
-                    <button type="button" class="btn btn-primary">Most Southern</button>
-                </div>
                 <div class="hide name-prompt" id="name-prompt">
                     <h3 class="card-title">Creating New City</h3>
                     <div id="name-prompt-action">
@@ -32,7 +25,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">City Name</span>
                             </div>
-                            <input type="text" class="form-control" placeholder="city name" aria-label="Username"
+                            <input id="inputCity" type="text" class="form-control" placeholder="city name" aria-label="Username"
                                 aria-describedby="basic-addon1">
                         </div>
 
@@ -40,7 +33,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Latitude</span>
                             </div>
-                            <input type="number" class="form-control" placeholder="enter N as + value, S as - value"
+                            <input id="inputLatitude" type="number" class="form-control" placeholder="enter N as + value, S as - value"
                                 aria-label="Username" aria-describedby="basic-addon1">
                         </div>
 
@@ -48,7 +41,7 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Longitude</span>
                             </div>
-                            <input type="number" class="form-control" placeholder="enter W as + value, E as - value"
+                            <input id="inputLongitude" type="number" class="form-control" placeholder="enter W as + value, E as - value"
                                 aria-label="Username" aria-describedby="basic-addon1">
                         </div>
 
@@ -56,21 +49,30 @@
                             <div class="input-group-prepend">
                                 <span class="input-group-text" id="basic-addon1">Population</span>
                             </div>
-                            <input type="number" class="form-control" placeholder="population" aria-label="Username"
+                            <input id="inputPopulation" type="number" class="form-control" placeholder="population" aria-label="Username"
                                 aria-describedby="basic-addon1">
                         </div>
 
-                        <button type="button" class="btn btn-primary">Create City</button>
+                        <button id="buttonCreateCity" type="button" class="btn btn-primary">Create City</button>
                     </div>
                 </div>
 
-                <div class="hide name-prompt" id="info-prompt">
-                    <div class="prompt-header">City Information</div>
-                    <div id="info-panel">
-                    </div>
+                <div id="control-container" class="mt-2">
+                    <button id="buttonGetPopulation" type="button" class="btn btn-primary">Population</button>
+                    <button id="buttonGetMostNorth" type="button" class="btn btn-primary">Most Northern</button>
+                    <button id="buttonGetMostSouth" type="button" class="btn btn-primary">Most Southern</button>
                 </div>
+
+                <br>
+            </div> 
+
+            <h3 class="ml-4">Available cities in the community!</h3>
+            <div id="container" class="row ml-2">
+                <!-- We will bind our city cards here -->
             </div>
+
         </div>
+        
         <script src="scripts/main.js" type="module"></script>
         <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
             integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

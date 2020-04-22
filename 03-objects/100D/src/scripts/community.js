@@ -35,9 +35,7 @@ class Community {
         let mostSouthern = 0;
         let cityToBeReturned = undefined;
         mostSouthern = this.cities[0].latitude;   // store -19
-        console.log("Length of city: ", this.cities.length);
         this.cities.forEach(city => {
-            console.log("City inside: ", city.latitude);
             if (parseInt(city.latitude) < 0 && parseInt(city.latitude) >= -90) {
                 if (parseInt(city.latitude) < mostSouthern) {
                     cityToBeReturned = city;
@@ -50,7 +48,7 @@ class Community {
     getPopulation(number) {
         let totalPopulation = 0;
         this.cities.forEach(city => {
-            totalPopulation = totalPopulation + city.population;
+            totalPopulation = totalPopulation + parseInt(city.population);
         });
         return totalPopulation;
     }
