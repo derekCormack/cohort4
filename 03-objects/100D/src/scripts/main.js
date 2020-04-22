@@ -9,7 +9,7 @@ var getPopulationButton = document.getElementById("buttonGetPopulation");
 var getMostNorth = document.getElementById("buttonGetMostNorth");
 var getMostSouth = document.getElementById("buttonGetMostSouth");
 
-const community = new Community();
+const community = new Community();//instantiate  community class
 
 createCityButton.addEventListener("click", () => {
     let cityName = document.getElementById("inputCity").value;
