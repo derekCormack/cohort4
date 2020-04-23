@@ -49,7 +49,7 @@ function createCardsDynamically() {
     community.cities.forEach(city => {
         //string literal - is used to add html in JS------------
         // ${} - string interpolation, dynamic binding of variable to html (in js)
-        //  below, use event listener on  id = "idTrashCan-cityName"
+        //  below, using event listener on  id = "idTrashCan-cityName"
         const card = `   <div class="card m-3 rounded-lrg border border-primary shadow-lg p-3 mb-5 bg-white rounded" style="width: 18rem;">
                 <div class="card-body">
                     <span id="idTrashCan-${city.name}" class="float-right">
