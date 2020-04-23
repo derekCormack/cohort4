@@ -59,12 +59,14 @@ class Community {
 
     deleteCity(cityName) {
         //deletes the city
+        let deletedCity = undefined;
+        console.log("city name: ", cityName);
         for (let i = 0; i < this.cities.length; i++) {
             if (this.cities[i].name == cityName) {
-                let deletedCity = this.cities.splice(i, 1);
-                console.log("Deleted City: ", deletedCity);
+                deletedCity = this.cities.splice(i, 1);
             }
         }
+        return deletedCity;
     }
 }
 

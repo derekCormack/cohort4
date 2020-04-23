@@ -20,5 +20,8 @@
     "node-fetch": "^2.6.0",
     "whatwg-fetch": "^3.0.0"
   },
-  "description": ""
+  "description": "",
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.13.0"
+  }
 }
