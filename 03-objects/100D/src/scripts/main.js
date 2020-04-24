@@ -79,10 +79,9 @@ function createCardsDynamically() {
             // indexOf() = is to get an index
             // trim() = to delete spaces
             let deletedCity = community.deleteCity(cityName.substring(cityName.indexOf(" ")).trim());
-            console.log(deletedCity);
             createCardsDynamically();
         }
-        event.stopPropagation();
+        //event.stopPropagation();  //stops event bubbling, multiple click listener events
     }) 
 }
 
@@ -91,7 +90,14 @@ function showCommunityData() {
     let totalPopulation = community.getPopulation();
     totalPopulationInput.value = totalPopulation;       //binding data to the value attribute of Input, if we had span/div, we could have binded it to innerHTML attribute
     let mostNorthCity = community.getMostNorthern();
-    mostNorthInput.value = mostNorthCity.latitude;
+    if(mostNorthCity) {
+        mostNorthInput.value = mostNorthCity.latitude;
+    }
+    //mostNorthInput.value = mostNorthCity?.latitude;     //? : Nullable check
     let mostSouthCity = community.getMostSouthern();
-    mostSouthInput.value = mostSouthCity.latitude;
+    if(mostSouthCity) {
+        mostSouthInput.value = mostSouthCity?.latitude;
+    }
 }
+
+//It shows me, U left the call on hangout....u there?
