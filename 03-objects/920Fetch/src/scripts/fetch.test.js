@@ -272,17 +272,48 @@ import functions from './fetch'
 //   done();
 // })
 
+//In Promises - we use .then() to subscribe   ******   single purpose.
+//In Observables - we use .subscribe() to subscribe   ****** much like a stream of data.  subject pushes to all subscribed observers!
+// https://rxjs-dev.firebaseapp.com/guide/observable
 test("is the Actual API working?", async (done) => {
   let response = undefined;
-  await functions.getUsersWithActualPromiseAPICall().then(JSON.parse).then(resolve => {
+  await functions.getUsersWithActualPromiseAPICall().then(resolve => {
     console.log("API is working");
-    response = resolve;
+    response = JSON.parse(resolve);
   }, reject => {
     console.error("Failed!", error);
   });
   
   console.log("what's in the response.email", response[0]); // [
   expect(response[0].email).toEqual("Sincere@april.biz");
+  done();
+})
+
+
+test("is the POST API working?", async (done) => {
+  let url = 'https://jsonplaceholder.typicode.com/users'
+  let object = {
+    id: 20,
+    name: 'Derek',
+    username: 'derek_username',
+    email: 'derek@april.biz',
+    address: {
+      street: 'Kulas Light',
+      suite: 'Apt. 556',
+      city: 'Gwenborough',
+      zipcode: '92998-3874',
+      geo: { lat: '-37.3159', lng: '81.1496' }
+    },
+    phone: '1-770-736-8031 x56442',
+    website: 'hildegard.org',
+    company: {
+      name: 'Romaguera-Crona',
+      catchPhrase: 'Multi-layered client-server neural-net',
+      bs: 'harness real-time e-markets'
+    }
+  }
+  const data = await functions.postData(url, object);
+  console.log("Posted data on server: ", data);
   done();
 })
 

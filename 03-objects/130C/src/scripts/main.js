@@ -36,6 +36,7 @@ createAcctButton.addEventListener("click", () => {
     //convert to number before passing it to Account
     var initialDepositNum = parseInt(initialDepositInput.value);
     account = new Account(accountNameInput.value, initialDepositNum, accountTypeInput.value);
+                            //instantiate into the array.
     console.log("Account Name: ", account.accountName);
     console.log("Initial Deposit: ", account.currentBalance);
     //Updating the running balance!
