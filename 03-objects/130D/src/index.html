@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title></title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link href="/node_modules/@fortawesome/fontawesome-free/css/fontawesome.css" rel="stylesheet">
+    <link href="/node_modules/@fortawesome/fontawesome-free/css/brands.css" rel="stylesheet">
+    <link href="/node_modules/@fortawesome/fontawesome-free/css/solid.css" rel="stylesheet">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h5 class="card-header">Community and City</h5>
+            <div class="card-body">
+                <div class="hide name-prompt" id="name-prompt">
+                    <h3 class="card-title">Creating New City</h3>
+                    <div id="name-prompt-action">
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">City Name</span>
+                            </div>
+                            <input id="inputCity" type="text" class="form-control" placeholder="city name"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Latitude</span>
+                            </div>
+                            <input id="inputLatitude" type="number" class="form-control"
+                                placeholder="enter N as + value, S as - value" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Longitude</span>
+                            </div>
+                            <input id="inputLongitude" type="number" class="form-control"
+                                placeholder="enter W as + value, E as - value" aria-label="Username"
+                                aria-describedby="basic-addon1">
+                        </div>
+
+                        <div class="input-group mb-3">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text" id="basic-addon1">Population</span>
+                            </div>
+                            <input id="inputPopulation" type="number" class="form-control" placeholder="population"
+                                aria-label="Username" aria-describedby="basic-addon1">
+                        </div>
+
+                        <button id="buttonCreateCity" type="button" class="btn btn-primary">Create City</button>
+                    </div>
+                </div>
+
+                <div id="control-container" class="mt-3">
+                    <div class="col-md-12 p-0">
+                        <div class="row">
+                            <div class="col-md-4 input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Total Population</span>
+                                </div>
+                                <input id="idDisplaytotalPop" type="number" class="form-control"
+                                    placeholder="Total Population" aria-label="Username"
+                                    aria-describedby="basic-addon1">
+                            </div>
+                            <div class="col-md-4 input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Most Northern City</span>
+                                </div>
+                                <input id="idDisplayMostN" type="number" class="form-control"
+                                    placeholder="Northern Most" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                            <div class="col-md-4 input-group mb-3">
+                                <div class="input-group-prepend">
+                                    <span class="input-group-text" id="basic-addon1">Most Southern City</span>
+                                </div>
+                                <input id="idDisplayMostS" type="number" class="form-control"
+                                    placeholder="Southern Most" aria-label="Username" aria-describedby="basic-addon1">
+                            </div>
+                        </div>
+                    </div>
+                    <!--removed buttons after creating cards, make static output row-->
+                    <!-- <button id="buttonGetPopulation" type="button" class="btn btn-primary">Population</button>
+                    <button id="buttonGetMostNorth" type="button" class="btn btn-primary">Most Northern</button>
+                    <button id="buttonGetMostSouth" type="button" class="btn btn-primary">Most Southern</button> -->
+                </div>
+
+                <br>
+            </div>
+
+            <h3 class="ml-4">Available cities in the community!</h3>
+            <div id="container" class="row ml-2">
+                <!--bind the city cards here -->
+            </div>
+
+        </div>
+    </div>
+
+    <script src="scripts/main.js" type="module"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
+        integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>
