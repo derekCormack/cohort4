@@ -45,7 +45,7 @@ const functions = {
       // Do the usual XHR stuff
       var req = new XMLHttpRequest();
 
-      //XMLHttpRequest - this has methods which we need to call,
+      //XMLHttpRequest - this has methods which can be called
       //0 method - open()
       //1st method is onload - which is responsible for resolving and rejecting the promise based on what you get from server
       //2nd method is onerror - which is responsible for error handling
@@ -80,11 +80,11 @@ const functions = {
 
       // Handle network errors
       req.onerror = function () {
-        //you will do something on UI when you get error
+        //do something on UI when you get error
         reject(Error("Network Error"));
       };
 
-      // Make the request
+      // Make request
       req.send();
     });
   },
